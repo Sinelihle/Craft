@@ -16,23 +16,20 @@ a{
 	color:#333;
 }
 
-/*.heading{
-	margin-top: 50px;
-}*/
-
 .logo{
 	position: absolute;
-	margin-left: 45%;
-	margin-top: 100px;
+	left: 45%;
+	top:100px;
 	color: rgb(255, 255, 255);
 	font-size: 4rem;
+	font-weight:100;
 }
+
 .main-nav{
 	background-image: url(build.jpg);
 	background-repeat: none;
 	background-color: grey;
 	background-blend-mode: multiply;
-
 }
 
 .link a{
@@ -55,12 +52,21 @@ a{
 	font-weight: bold;
 	text-decoration: underline;
 }
-/*
-.link-content a{
-	display:flex;
-
-}*/
 
 .content{
 	margin-top: 50px;
+
 }
+
+.content h2{
+	font-size: 3rem;
+	text-align: center;
+	background-color: steelblue
+}
+
+.content p{
+	background-color: black;
+	color:white;
+}
+
+	@media()
