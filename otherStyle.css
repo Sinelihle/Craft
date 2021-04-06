@@ -30,3 +30,7 @@ ul{
 	color: steelblue;
 	transition: ease 3ms;
 }
+
+.content{
+	margin-top: 20px;
+}
