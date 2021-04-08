@@ -11,13 +11,18 @@ a{
 	text-decoration: none;
 }
 
+body{
+	background-color:steelblue;
+}
+
 ul{
 	list-style: none;
 }
 
-.main-nav{
-	
-	background-color: rgba(0, 0, 0, 0.87);
+.main-header h1{
+	color:white;
+	font-weight:lighter;
+	cursor:pointer;
 }
 
 .main-nav a{
@@ -25,12 +30,41 @@ ul{
 	padding: 15px;
 	margin: 3px;
 }
+.main-header{
+	background-color: black;	
+	display:flex;
+	justify-content: space-around;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.main-header li{
+	display: inline-block;
+}
 
 .main-nav a:hover{
 	color: steelblue;
-	transition: ease 3ms;
+	border-bottom: 2px solid steelblue;
+	transition:ease-in 1500ms;
 }
 
 .content{
+	background-image: url(build.jpg);
+	background-color:rgba(0,0,0,0.6);
+	background-blend-mode: multiply;
 	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 10px;
+	padding: 50px;
+}
+
+.content:hover{
+	background-image: url();
+	background-color:rgba(0,0,0,0.6);
+	background-blend-mode: multiply;
+	transition: ease-in 5000ms;
+}
+
+.content p,h2{
+	color: white;
 }
