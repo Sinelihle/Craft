@@ -1,70 +1,163 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*general style for the webpage*/
 *{
 	box-sizing: border-box;
 	padding:0;
 	margin: 0;
-	color: black;
+	color: #fff;
 	font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+/*remove underline from anchor tags*/
 a{
 	text-decoration: none;
 }
 
-body{
-	background-color:steelblue;
+/*setting the height of our html page*/
+html{
+	height:100%;
 }
 
+/*styling the body*/
+body{
+	/*background-color: rgba(0,0,0,0.5);
+	background-image:url('drinkWater.jpg');
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	min-height:100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/*styling all the unordered list tags*/
 ul{
 	list-style: none;
 }
 
+/*class for active links/page*/
+.active-nav{
+	border-bottom: 2px solid steelblue;
+}
+
+/*styling our logo*/
 .main-header h1{
-	color:white;
-	font-weight:lighter;
+	font-weight: 500;
 	cursor:pointer;
 }
 
+/*styling anchors that are children of the main-nav*/
 .main-nav a{
 	color:white;
 	padding: 15px;
 	margin: 3px;
 }
+
+/*styling the header*/
 .main-header{
 	background-color: black;	
 	display:flex;
 	justify-content: space-around;
 	padding-top: 10px;
 	padding-bottom: 20px;
+	position:static;
+	z-index: 2;
 }
 
+/*styling the li's that are the child of the main-header class*/
 .main-header li{
 	display: inline-block;
 }
 
+/*styling the nav's to have a border bottom and steelblue color when hovered*/
 .main-nav a:hover{
 	color: steelblue;
 	border-bottom: 2px solid steelblue;
-	transition:ease-in 1500ms;
+	transition:ease-in 1000ms;
+}
+.content-container{
+	background-image: url('drinkWater.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.6);
+	background-blend-mode: multiply;
 }
 
+/*styling the section that contains the content of the page*/
 .content{
-	background-image: url(build.jpg);
 	background-color:rgba(0,0,0,0.6);
-	background-blend-mode: multiply;
 	margin-top: 20px;
 	margin-left: 20px;
+	margin-right:20px;
 	border-radius: 10px;
 	padding: 50px;
 }
 
+/*
 .content:hover{
-	background-image: url();
-	background-color:rgba(0,0,0,0.6);
-	background-blend-mode: multiply;
-	transition: ease-in 5000ms;
-}
+	background-color: rgba(0,0,0,0.8);
+}*/
 
-.content p,h2{
+/*style the paragraphs and h1's*/
+.content p,h1{
 	color: white;
 }
+
+/*styling the header of our content*/
+.content h1{
+	margin-left:36.5%;
+	font-size:4rem;
+	padding:40px;
+	text-transform: uppercase;
+}
+
+.content h2{
+	margin-left:39%;
+	color:rgb(207, 207, 207);
+	padding-bottom: 30px;
+}
+
+/*styling the span to display certain color*/
+.content span{
+	color:rgb(75, 128, 167, .6);
+}
+.content h2 span{
+	text-decoration:underline;
+	cursor: pointer;
+}
+
+.content h2 span:hover{
+	color: steelblue;
+}
+
+.content p{
+	text-align: center;
+	
+}
+/*styling the footer*/
+.main-footer {
+	background-color:steelblue;
+	padding: 3rem;
+	margin-top:auto;
+}
+
+/*styling all the footer content*/
+.image-links{
+	display: flex;
+	margin-left: 79%;
+	overflow: hidden;
+}
+
+.image-links a{
+	padding: 50px;
+}
+
+.image-links img{
+	height:50px;
+	width: 50px;
+}
+
+.image-links img:hover{
+	
+}
+
