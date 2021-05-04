@@ -20,14 +20,10 @@ html{
 
 /*styling the body*/
 body{
-	/*background-color: rgba(0,0,0,0.5);
-	background-image:url('drinkWater.jpg');
-	background-blend-mode: multiply;
-	background-repeat: no-repeat;
-	background-size: cover;*/
 	min-height:100%;
 	display: flex;
 	flex-direction: column;
+	background-color:#E5E7EB;
 }
 
 /*styling all the unordered list tags*/
@@ -76,27 +72,19 @@ ul{
 	transition:ease-in 1000ms;
 }
 .content-container{
-	background-image: url('drinkWater.jpg');
+	background-image: url('/Images/tub.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: rgba(0,0,0,0.6);
 	background-blend-mode: multiply;
+	padding-bottom: 300px;
 }
 
-/*styling the section that contains the content of the page*/
-.content{
-	background-color:rgba(0,0,0,0.6);
-	margin-top: 20px;
-	margin-left: 20px;
-	margin-right:20px;
-	border-radius: 10px;
-	padding: 50px;
-}
 
-/*
-.content:hover{
+.content-container:hover{
+	transition: 500ms ease;
 	background-color: rgba(0,0,0,0.8);
-}*/
+}
 
 /*style the paragraphs and h1's*/
 .content p,h1{
@@ -114,11 +102,11 @@ ul{
 .content h2{
 	margin-left:39%;
 	color:rgb(207, 207, 207);
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 }
 
 /*styling the span to display certain color*/
-.content span{
+span{
 	color:rgb(75, 128, 167, .6);
 }
 .content h2 span{
@@ -132,7 +120,11 @@ ul{
 
 .content p{
 	text-align: center;
-	
+	font-size: large;
+}
+
+.content{
+	padding-bottom:200px;
 }
 /*styling the footer*/
 .main-footer {
@@ -157,7 +149,29 @@ ul{
 	width: 50px;
 }
 
-.image-links img:hover{
-	
+.join-btn{
+	text-transform: uppercase;
+	padding: 20px 40px;
+	background-color:steelblue;
+	border-radius: 30px;
+    align-content: center;
+	transition: 2s ease;
 }
 
+.join-btn:hover{
+	background-color:rgba(70, 131, 180, 0.281)
+}
+
+.btn-position{
+	margin-top: 50px;
+	margin-left:50%;
+}
+
+.secondary-content{
+  margin:20px 50px;
+ 
+}
+
+.secondary-content p{
+	color:black
+}
